@@ -20,7 +20,7 @@ body {
         "footer footer";
 }
 
-@media screen and (min-width:375px) and (max-width: 540px) {
+@media screen and (min-width:360px) and (max-width: 540px) {
     .grid-wrapper {
         display: flex;
         flex-direction: column;
@@ -43,7 +43,7 @@ body {
     display: none;
 }
 
-@media screen and (min-width:375px) and (max-width: 540px) {
+@media screen and (min-width:360px) and (max-width: 540px) {
     .grid-1-container {
         background-color: rgb(255, 255, 255);
 
@@ -100,7 +100,7 @@ nav a:hover {
     width: 0;
 }
 
-@media only screen and (min-width: 375px) and (max-width: 540px) {
+@media only screen and (min-width: 360px) and (max-width: 540px) {
 
     .grid-2-container .desktop-img img {
 
@@ -159,7 +159,7 @@ nav a:hover {
     background-color: hsl(240, 100%, 5%);
 }
 
-@media screen and (min-width: 375px) and (max-width: 540px) {
+@media screen and (min-width: 360px) and (max-width: 540px) {
     .grid-2-container .text-wrapper {
         display: flex;
         flex-direction: column;
@@ -202,7 +202,7 @@ nav a:hover {
 
 }
 
-@media screen and (min-width:375px) and (max-width: 540px) {
+@media screen and (min-width:360px) and (max-width: 540px) {
     .grid-3-container {
         grid-area: news;
         padding: 1rem;
@@ -229,7 +229,7 @@ nav a:hover {
     width: 70%;
 }
 
-@media screen and (min-width: 375px) and (max-width: 540px) {
+@media screen and (min-width: 360px) and (max-width: 540px) {
     .grid-4-container {
         flex-direction: column;
     }
@@ -240,6 +240,7 @@ nav a:hover {
     }
 
     .grid-4-container .ads-container .paragraph-2 {
+        
         width: 90%;
     }
 }
