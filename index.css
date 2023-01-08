@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-auto-rows: minmax(2fr auto);
+    grid-gap: 2rem;
+    padding: 2rem 6rem;
+    grid-template-areas:
+        "header header"
+        "section news"
+        "ads ads"
+        "footer footer";
+}
+
+@media screen and (min-width:375px) and (max-width: 540px) {
+    .grid-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+}
+
+.grid-1-container {
+    grid-area: header;
+}
+
+.grid-1-container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (min-width:375px) and (max-width: 540px) {
+    .grid-1-container {
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .grid-1-container nav {
+        padding: .3rem;
+    }
+
+    .nav-list-wrapper {
+        display: none;
+    }
+
+    .grid-1-container nav .brand img {
+        width: 45px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.grid-1-container nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.grid-1-container nav ul li {
+    padding: 1rem;
+    list-style-type: none;
+}
+
+nav a {
+    color: hsl(236, 13%, 42%);
+    color: hsl(233, 8%, 79%);
+    text-decoration: none;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+}
+
+.grid-2-container {
+    grid-area: section;
+    color: aqua;
+}
+
+.grid-2-container .desktop-img img {
+    width: 100%;
+}
+
+.grid-2-container .img img {
+    width: 0;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+
+    .grid-2-container .desktop-img img {
+
+        width: 0;
+    }
+
+    .grid-2-container .img img {
+        width: 100%;
+    }
+
+}
+
+.grid-2-container .text-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.grid-2-container .text-wrapper div {
+    width: 100%;
+    padding: 1rem 0;
+
+}
+
+.grid-2-container .text-wrapper .text-1 {
+    color: hsl(240, 100%, 5%);
+
+}
+
+.grid-2-container .text-wrapper .text-1 p {
+    color: hsl(240, 100%, 5%);
+    font-size: 3rem;
+    font-weight: 800;
+    width: 80%;
+}
+
+.grid-2-container .text-wrapper .text-2 p {
+    color: hsl(233, 8%, 79%);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    width: 89.9%;
+}
+
+
+.grid-2-container .text-wrapper .text-2 div a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem 1.7rem;
+    background-color: hsl(5, 85%, 63%);
+
+}
+
+.grid-2-container .text-wrapper .text-2 div a:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+@media screen and (min-width: 375px) and (max-width: 540px) {
+    .grid-2-container .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .grid-2-container .text-wrapper .text-1 {
+        color: hsl(240, 100%, 5%);
+
+    }
+
+}
+
+.grid-3-container {
+    grid-area: news;
+    padding: 2rem;
+    width: 90%;
+    height: auto;
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(240, 100%, 5%);
+}
+
+.grid-3-container .new {
+    padding: 1rem .5rem;
+    color: hsl(35, 77%, 62%);
+}
+
+.grid-3-container .text-wrapper .news-wrapper hr {
+    margin: 1rem 0;
+    opacity: .5;
+}
+
+.grid-3-container .news-items {
+    padding: 1rem .5rem;
+}
+
+.grid-3-container .news-items h2:hover {
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+
+}
+
+@media screen and (min-width:375px) and (max-width: 540px) {
+    .grid-3-container {
+        grid-area: news;
+        padding: 1rem;
+    }
+}
+
+.grid-4-container {
+    grid-area: ads;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.grid-4-container .ads-container {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.grid-4-container .ads-container .paragraph-2 {
+    color: hsl(236, 13%, 42%);
+    width: 70%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 540px) {
+    .grid-4-container {
+        flex-direction: column;
+    }
+
+    .grid-4-container .ads-container {
+        padding: 1rem 0;
+
+    }
+
+    .grid-4-container .ads-container .paragraph-2 {
+        background-color: #ddd;
+        width: 90%;
+    }
+}
+
+.grid-4-container .ads-container img {
+    width: 100px;
+    height: auto;
+}
+
+.grid-4-container .ads-container h1 {
+
+    color: hsl(236, 13%, 42%);
+    color: hsl(233, 8%, 79%);
+}
+
+.grid-4-container .ads-container .paragraph {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+
+.grid-4-container .ads-container .paragraph:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+
+}
