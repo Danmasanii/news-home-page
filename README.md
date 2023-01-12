@@ -1,1 +1,3 @@
-# news-home-page
+# News Home Page
+## Designed using CSS Grid
+### ()
